@@ -1,10 +1,15 @@
-# Weak--ButBrave--learner
 
-Weak-ButBrave-Learner, est un projet pédagogique C++ en cours de développement dont l’objectif est de permettre de constituer une base d'images annotées pour un apprentissage supervisé, puis de la multiplier par augmentation de données. 
+
+<h1 align="center">  Weak-<i>ButBrave-</i>Learner </h1>
+
+
+
+**Weak-*ButBrave*-Learner**, est un projet pédagogique C++ en cours de développement dont l’objectif est de permettre de constituer une base d'images annotées pour un apprentissage supervisé, puis de la multiplier par augmentation de données. 
 
 ## Cahier des charges
 
-## Acquisition 
+
+### Acquisition 
 
 L'acquisition de clichés pour l'apprentissage pourra soit être fournie par l'utilisateur (dossier local), soit acquises via la webcam de l'ordinateur.
 
