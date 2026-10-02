@@ -19,12 +19,12 @@ L'utilisateur ouvre un dossier contenant des images. L'interface affiche l'image
 
 ### Persistance 
 
-Les annotations sont sauvegardées et relues dans un format texte au choix, documenté dans le cahier des charges : soit un fichier .txt par image au format YOLO (classe, centre x, centre y, largeur, hauteur, normalisés), soit un fichier JSON unique décrivant toute la base. Le programme doit être capable de relire ce qu'il a écrit, et ne doit jamais perdre le travail en cours en cas de fermeture. 
+Les annotations sont sauvegardées et relues dans un format .txt par image au format YOLO (classe, centre x, centre y, largeur, hauteur, normalisés), soit un fichier JSON unique décrivant toute la base. Le programme doit être capable de relire ce qu'il a écrit, et ne doit jamais perdre le travail en cours en cas de fermeture. 
 
 ### Augmentation 
 
 À partir de la base annotée, le programme génère N variantes par image en enchaînant des transformations paramétrables : miroir horizontal ou vertical, rotation, changement d'échelle et recadrage, variation de luminosité et de contraste, flou gaussien, bruit gaussien ou poivre-et-sel, variation de teinte. 
-Les boîtes englobantes doivent être transformées de façon cohérente avec l’image : c'est le point le plus délicat du sujet, et il devra être traité explicitement dans le cahier des charges (que devient une boîte qui sort partiellement ou totalement du cadre après une rotation ?). Une fenêtre de prévisualisation montre le résultat d'un tirage aléatoire avant de lancer la génération complète. 
+Les boîtes englobantes doivent être transformées de façon cohérente avec l’image. Une fenêtre de prévisualisation montre le résultat d'un tirage aléatoire avant de lancer la génération complète. 
 
 La génération produit un dossier de sortie contenant les images et les annotations correspondantes, un fichier récapitulatif indiquant le nombre d'images par classe (histogramme affiché dans l'interface), et une répartition apprentissage / validation selon un pourcentage choisi par l'utilisateur. 
 
